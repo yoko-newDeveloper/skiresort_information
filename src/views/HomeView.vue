@@ -4,57 +4,57 @@
   stripe
   style="width: 100%">
   <el-table-column
-    prop="date"
-    label="Date"
-    width="180">
+    prop="skiresortName"
+    label="スキーリゾート名"
+    width="200">
   </el-table-column>
   <el-table-column
-    prop="name"
-    label="Name"
-    width="180">
+    prop="area"
+    label="エリア"
+    width="200">
   </el-table-column>
   <el-table-column
-    prop="address"
-    label="Address">
+    prop="access"
+    label="アクセス"
+    width="200">
   </el-table-column>
+  <el-table-column
+    prop="numberOfStars"
+    label="星の数"
+    width="200">
+  </el-table-column>
+  <el-table-column
+    prop="recommentedPoint"
+    label="お勧めポイント">
+  </el-table-column>
+
 </el-table>
-<!-- <div class="home">
-  <img alt="Vue logo" src="../assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</div> -->
 </template>
 
 <script>
 export default {
   data () {
     return {
-      tableData: [{
-        date: '2016-05-03',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+      tableData: [{ // 項目が5つあるので、要素数（5回ループ又はmapする）
+        skiresortName: 'わん',
+        area: 'にゃん',
+        access: 'がおー',
+        numberOfStars: 'わんわん',
+        recommentedPoint: 'ぱおーん'
       }, {
-        date: '2016-05-02',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        skiresortName: 'わん',
+        area: 'にゃん',
+        access: 'がおー',
+        numberOfStars: 'わんわん',
+        recommentedPoint: 'ぱおーん'
       }, {
-        date: '2016-05-04',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
-      }, {
-        date: '2016-05-01',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        skiresortName: '',
+        area: '',
+        access: '',
+        numberOfStars: '',
+        recommentedPoint: ''
       }]
     }
   }
 }
-// // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-// export default {
-//   name: 'HomeView',
-//   components: {
-//     HelloWorld
-//   }
-// }
 </script>
