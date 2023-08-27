@@ -1,4 +1,8 @@
 <template>
+  <!-- タイトルヘッダ -->
+  <el-container>
+  <el-header>Skiresort-information</el-header>
+
   <el-table
   :data="tableData"
   stripe
@@ -29,8 +33,17 @@
   </el-table-column>
 
 </el-table>
+</el-container>
 </template>
-
+<style>
+  .el-header{
+    background-color: #f37fcf;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+</style>
 <script>
 export default {
   data () {

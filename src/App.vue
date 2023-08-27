@@ -1,25 +1,36 @@
 <template>
-  <el-main>
-    <router-view/>
-  </el-main>
+  <div>
+  <!-- <el-radio-group v-model="labelPosition" size="small">
+    <el-radio-button label="left">Left</el-radio-button>
+    <el-radio-button label="right">Right</el-radio-button>
+    <el-radio-button label="top">Top</el-radio-button>
+  </el-radio-group> -->
+    <div style="margin: 20px;"></div>
+    <el-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign">
+      <el-form-item label="skiresortName">
+        <el-input v-model="formLabelAlign.name"></el-input>
+      </el-form-item>
+      <el-form-item label="area">
+        <el-input v-model="formLabelAlign.region"></el-input>
+      </el-form-item>
+      <el-form-item label="Activity form">
+        <el-input v-model="formLabelAlign.type"></el-input>
+      </el-form-item>
+    </el-form>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: 'app',
-  components: {
+  data () {
+    return {
+      labelPosition: 'right',
+      formLabelAlign: {
+        name: '',
+        region: '',
+        type: ''
+      }
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

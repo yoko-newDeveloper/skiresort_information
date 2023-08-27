@@ -4,10 +4,11 @@
 
 ## skiresort_information
 
-- Table作成
+- Table作成✅
 - tableにテストデータを入力
-- ヘッダ（タイトル）
+- ヘッダ（タイトル）✅
 - レコードの実装
+- 切替タブ
 - input-formをレコードに反映させる
 
 ## input-form
