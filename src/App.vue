@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <!-- <el-header>skiresortInformation</el-header> -->
+      <!-- タイトルヘッダ 全ページに表示させるため-->
+  <el-header>Skiresort-information</el-header>
     <el-main>
       <!-- 記述しておくことでviewファイルが埋め込まれる（他のview画面に切り替わってくれる） -->
       <router-view/>

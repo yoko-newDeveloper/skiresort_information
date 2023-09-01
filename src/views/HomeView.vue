@@ -1,8 +1,5 @@
 <template>
-  <!-- タイトルヘッダ -->
   <el-container>
-  <el-header>Skiresort-information</el-header>
-
   <el-table
   :data="tableData"
   stripe
